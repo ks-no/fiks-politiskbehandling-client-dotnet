@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netcoreapp3.1;netstandard2.0</TargetFrameworks>
+        <LangVersion>9</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NJsonSchema.CodeGeneration.CSharp" Version="10.4.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Models" />
+      <Folder Include="Models\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.hentmøteplan.v1.schema.json" />
+      <Content Include="Schema\no.ks.fiks.politisk.behandling.hentmøteplan.v1.schema.json" CopyToOutputDirectory="Always" />
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.hentutvalg.v1.schema.json" />
+      <Content Include="Schema\no.ks.fiks.politisk.behandling.hentutvalg.v1.schema.json" CopyToOutputDirectory="Always" />      <None Remove="Schema\no.ks.fiks.politisk.behandling.resultatmøteplan.v1.schema.json" />
+      <Content Include="Schema\no.ks.fiks.politisk.behandling.resultatmøteplan.v1.schema.json" CopyToOutputDirectory="Always" />
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.resultatutvalg.v1.schema.json" />
+      <Content Include="Schema\no.ks.fiks.politisk.behandling.resultatutvalg.v1.schema.json" CopyToOutputDirectory="Always" />
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.senddelegertvedtak.v1.schema.json" />
+      <Content Include="Schema\no.ks.fiks.politisk.behandling.senddelegertvedtak.v1.schema.json" CopyToOutputDirectory="Always" />
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.v1.schema.json" />
+      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.v1.schema.json" CopyToOutputDirectory="Always" />
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.sendutvalgssak.v1.schema.json" />
+      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendutvalgssak.v1.schema.json" CopyToOutputDirectory="Always" />
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.v1.schema.json" />
+      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.v1.schema.json" CopyToOutputDirectory="Always" />
+    </ItemGroup>
+
+</Project>

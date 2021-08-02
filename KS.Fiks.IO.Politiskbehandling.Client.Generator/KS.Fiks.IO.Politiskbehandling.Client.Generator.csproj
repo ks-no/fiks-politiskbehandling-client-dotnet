@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NJsonSchema.CodeGeneration.CSharp" Version="10.4.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.hentmøteplan.v1.schema.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\KS.Fiks.IO.Politiskbehandling.Client\KS.Fiks.IO.Politiskbehandling.Client.csproj" />
+    </ItemGroup>
+
+</Project>
