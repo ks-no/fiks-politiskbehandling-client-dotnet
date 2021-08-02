@@ -6,10 +6,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="NJsonSchema.CodeGeneration.CSharp" Version="10.4.6" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Folder Include="Models" />
       <Folder Include="Models\" />
     </ItemGroup>

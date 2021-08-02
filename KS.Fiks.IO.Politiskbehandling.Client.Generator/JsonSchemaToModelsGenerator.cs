@@ -9,6 +9,7 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Generator
     {
         private static void Main(string[] args)
         {
+            // Denne genererer klasser, men har tilsynelatende noen problemer med å bli helt korrekt i resultatet for alle schema
             const string outputFolder = "Models";
             Directory.CreateDirectory(outputFolder);
             
@@ -22,7 +23,8 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Generator
                 var classAsString = generator.GenerateFile();
                 Console.Out.WriteLine($"file: {classAsString}");
                 var classFilename = schemaFilename.Split('.')[6];
-                File.WriteAllText($"./{outputFolder}/{ToUpper(classFilename)}.cs", classAsString);
+                //TODO Hente filnavn fra title i hvert schema i stedet
+                File.WriteAllText($"./{outputFolder}/{ToUpper(classFilename)}.cs", classAsString); 
             }
         }
 
