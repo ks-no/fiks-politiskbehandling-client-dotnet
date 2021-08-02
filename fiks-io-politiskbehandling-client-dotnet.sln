@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.Fiks.IO.Politiskbehandling.Client", "KS.Fiks.IO.Politiskbehandling.Client\KS.Fiks.IO.Politiskbehandling.Client.csproj", "{4E225C02-0AF7-46B9-AB8C-94230302E2B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.Fiks.IO.Politisk.Behandling.Client", "KS.Fiks.IO.Politisk.Behandling.Client\KS.Fiks.IO.Politisk.Behandling.Client.csproj", "{4E225C02-0AF7-46B9-AB8C-94230302E2B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.Fiks.IO.Politiskbehandling.Client.Generator", "KS.Fiks.IO.Politiskbehandling.Client.Generator\KS.Fiks.IO.Politiskbehandling.Client.Generator.csproj", "{E8C7C0B0-24F8-4B7D-8808-E374E7F63F17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KS.Fiks.IO.Politisk.Behandling.Client.Generator", "KS.Fiks.IO.Politisk.Behandling.Client.Generator\KS.Fiks.IO.Politisk.Behandling.Client.Generator.csproj", "{E8C7C0B0-24F8-4B7D-8808-E374E7F63F17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

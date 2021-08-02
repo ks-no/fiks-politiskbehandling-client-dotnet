@@ -3,10 +3,10 @@
     <PropertyGroup>
         <TargetFrameworks>netcoreapp3.1;netstandard2.0</TargetFrameworks>
         <LangVersion>9</LangVersion>
+        <RootNamespace>KS.Fiks.IO.Politiskbehandling.Client</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Models" />
       <Folder Include="Models\" />
     </ItemGroup>
 
