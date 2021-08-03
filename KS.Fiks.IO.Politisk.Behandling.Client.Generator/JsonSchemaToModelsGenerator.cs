@@ -21,6 +21,7 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Generator
             {
                 var schemaFile =
                     JsonSchema.FromFileAsync(schemaFilename).Result;
+                
                 var generator = new CSharpGenerator(schemaFile);
                 var classAsString = generator.GenerateFile();
                 Console.Out.WriteLine($"file: {classAsString}");
