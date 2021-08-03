@@ -9,7 +9,9 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Generator
     {
         private static void Main(string[] args)
         {
-            // Denne genererer klasser, men har tilsynelatende noen problemer med å bli helt korrekt i resultatet for alle schema
+            // Denne genererer klasser, men har tilsynelatende noen problemer med å bli helt korrekt i resultatet for alle schema. Det kan være noe med schemafilene.
+            // Filene genereres i bin/Debug/netcoreapp3.1/Models mappen
+            
             const string outputFolder = "Models";
             Directory.CreateDirectory(outputFolder);
             
