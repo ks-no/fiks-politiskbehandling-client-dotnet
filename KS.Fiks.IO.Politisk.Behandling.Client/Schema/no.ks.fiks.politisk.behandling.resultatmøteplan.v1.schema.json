@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://no.ks.fiks.politisk.behandling/ResultatMøteplan.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://no.ks.fiks.politisk.behandling/ResultatMoteplan.v1.schema.json",
   "title": "ResultatMøteplan",
   "definitions": {
     "Utvalg": {
