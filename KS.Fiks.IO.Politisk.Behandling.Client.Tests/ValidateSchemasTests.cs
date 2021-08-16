@@ -24,7 +24,9 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
             
             foreach (var jsonSchemaFilepath in jsonSchemaFilepaths)
             {
-                var jsonSchemaFilename = jsonSchemaFilepath.Split('/')[2];
+                Console.Out.WriteLine($"{jsonSchemaFilepath} schema fil funnet for validering");
+                var pathSeparator = jsonSchemaFilepath.Contains('/') ? '/' : '\\'; 
+                var jsonSchemaFilename = jsonSchemaFilepath.Split(pathSeparator)[2];
                 
                 Console.Out.WriteLine($"{jsonSchemaFilename} valideres...");
                 
