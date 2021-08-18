@@ -10,7 +10,7 @@
         <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.14" />
         <PackageReference Include="NUnit" Version="3.12.0" />
         <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -33,7 +33,7 @@
       <None Remove="Schema\CoreValidationDialectMetaSchema\format-annotation" />
       <Content Include="Schema\CoreValidationDialectMetaSchema\format-annotation" CopyToOutputDirectory="Always" />
       <None Remove="Schema\CoreValidationDialectMetaSchema\content" />
-      <Content Include="Schema\CoreValidationDialectMetaSchema\content" CopyToOutputDirectory="Always"/>
+      <Content Include="Schema\CoreValidationDialectMetaSchema\content" CopyToOutputDirectory="Always" />
     </ItemGroup>
 
 </Project>

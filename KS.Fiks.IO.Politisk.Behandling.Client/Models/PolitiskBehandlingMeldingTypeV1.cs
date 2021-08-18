@@ -1,6 +1,6 @@
 namespace KS.Fiks.IO.Politiskbehandling.Client.Models
 {
-    public class PolitisBehandlingMeldingTypeV1
+    public class PolitiskBehandlingMeldingTypeV1
     {
         // Forespørsler
         public const string HentMøteplan = "no.ks.fiks.politisk.behandling.klient.hentmøteplan.v1";
