@@ -10,6 +10,7 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Models
         public const string ResultatMøteplan = "no.ks.fiks.politisk.behandling.tjener.resultatmøteplan.v1";
         public const string ResultatUtvalg = "no.ks.fiks.politisk.behandling.tjener.resultatutvalg.v1";
         public const string ResultatSendVedtakFraUtvalg = "no.ks.fiks.politisk.behandling.tjener.sendvedtakfrautvalg.v1";
+        public const string Mottatt = "no.ks.fiks.politisk.behandling.mottatt.v1";
         
         // Innsendelser
         public const string SendUtvalgssak = "no.ks.fiks.politisk.behandling.klient.sendutvalgssak.v1";
