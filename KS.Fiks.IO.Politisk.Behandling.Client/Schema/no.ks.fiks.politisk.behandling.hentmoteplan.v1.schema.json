@@ -10,12 +10,6 @@
     },
     "utvalgNavn": {
       "type": "string"
-    },
-    "inkluderMøter": {
-      "type": "boolean"
     }
   },
-  "required": [
-    "inkluderMøter"
-  ]
 }
