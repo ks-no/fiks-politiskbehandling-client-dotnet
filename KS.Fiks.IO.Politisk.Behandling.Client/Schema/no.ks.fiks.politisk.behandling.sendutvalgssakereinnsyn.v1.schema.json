@@ -39,25 +39,25 @@
     "Utvalgssakeinnsyn": {
       "type": "object",
       "properties": {
-        "referanseEksternNoekkel": {
+        "referanseEksternNøkkel": {
           "type": "object",
           "properties": {
             "fagsystem": {
               "type": "string"
             },
-            "noekkel": {
+            "nøkkel": {
               "type": "string"
             }
           },
           "required": [
             "fagsystem",
-            "noekkel"
+            "nøkkel"
           ]
         },
         "utvalgetsSaksnummer": {
           "type": "object",
           "properties": {
-            "saksaar": {
+            "saksår": {
               "type": "integer"
             },
             "sakssekvensnummer": {
@@ -65,7 +65,7 @@
             }
           },
           "required": [
-            "saksaar",
+            "saksår",
             "sakssekvensnummer"
           ]
         },
@@ -176,19 +176,19 @@
         }
       },
       "required": [
-        "referanseEksternNoekkel",
+        "referanseEksternNøkkel",
         "utvalgetsSaksnummer",
         "tittel",
         "saksansvarlig"
       ]
     },
-    "Moete": {
+    "Møte": {
       "type": "object",
       "properties": {
-        "moeteid": {
+        "møteid": {
           "type": "string"
         },
-        "moetedato": {
+        "møtedato": {
           "type": "string",
           "format": "date-time"
         },
@@ -197,7 +197,7 @@
         }
       },
       "required": [
-        "moeteid"
+        "møteid"
       ]
     },
     "Utvalgsmedlem": {
@@ -209,7 +209,7 @@
         "navn": {
           "type": "string"
         },
-        "rekkefoelge": {
+        "rekkefølge": {
           "type": "integer"
         },
         "representerer": {
@@ -233,19 +233,19 @@
       "required": [
         "medlemsId",
         "navn",
-        "rekkefoelge"
+        "rekkefølge"
       ]
     }
   },
   "type": "object",
   "properties": {
-    "moete": {
+    "møte": {
       "type": "object",
       "properties": {
-        "moeteid": {
+        "møteid": {
           "type": "string"
         },
-        "moetedato": {
+        "møtedato": {
           "type": "string",
           "format": "date-time"
         },
@@ -254,7 +254,7 @@
         }
       },
       "required": [
-        "moeteid"
+        "møteid"
       ]
     },
     "utvalg": {
@@ -266,10 +266,10 @@
         "utvalgNavn": {
           "type": "string"
         },
-        "moete": {
+        "møte": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Moete"
+            "$ref": "#/definitions/Møte"
           }
         },
         "medlem": {
@@ -310,7 +310,7 @@
     }
   },
   "required": [
-    "moete",
+    "møte",
     "utvalg",
     "avsender"
   ]

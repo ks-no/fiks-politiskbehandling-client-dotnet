@@ -39,7 +39,7 @@
         "Votering": {
             "type": "object",
             "properties": {
-                "moetedeltaker": {
+                "møtedeltaker": {
                     "type": "string"
                 },
                 "representerer": {
@@ -69,7 +69,7 @@
                 }
             },
             "required": [
-                "moetedeltaker",
+                "møtedeltaker",
                 "representerer",
                 "stemme"
             ]
@@ -83,10 +83,10 @@
         "utvalgNavn": {
             "type": "string"
         },
-        "moeteId": {
+        "møteId": {
             "type": "string"
         },
-        "moetedato": {
+        "møtedato": {
             "type": "string",
             "format": "date-time"
         },
@@ -96,25 +96,25 @@
         "sak": {
             "type": "object",
             "properties": {
-                "referanseEksternNoekkel": {
+                "referanseEksternNøkkel": {
                     "type": "object",
                     "properties": {
                         "fagsystem": {
                             "type": "string"
                         },
-                        "noekkel": {
+                        "nøkkel": {
                             "type": "string"
                         }
                     },
                     "required": [
                         "fagsystem",
-                        "noekkel"
+                        "nøkkel"
                     ]
                 },
                 "fagsystemetsSaksnummer": {
                     "type": "object",
                     "properties": {
-                        "saksaar": {
+                        "saksår": {
                             "type": "integer"
                         },
                         "sakssekvensnummer": {
@@ -122,14 +122,14 @@
                         }
                     },
                     "required": [
-                        "saksaar",
+                        "saksår",
                         "sakssekvensnummer"
                     ]
                 },
                 "utvalgetsSaksnummer": {
                     "type": "object",
                     "properties": {
-                        "saksaar": {
+                        "saksår": {
                             "type": "integer"
                         },
                         "sakssekvensnummer": {
@@ -137,7 +137,7 @@
                         }
                     },
                     "required": [
-                        "saksaar",
+                        "saksår",
                         "sakssekvensnummer"
                     ]
                 },
@@ -250,7 +250,7 @@
                 }
             },
             "required": [
-                "referanseEksternNoekkel",
+                "referanseEksternNøkkel",
                 "fagsystemetsSaksnummer",
                 "utvalgetsSaksnummer",
                 "tittel",
@@ -262,8 +262,8 @@
     "required": [
         "utvalgId",
         "utvalgNavn",
-        "moeteId",
-        "moetedato",
+        "møteId",
+        "møtedato",
         "erEndeligVedtak",
         "sak"
     ]

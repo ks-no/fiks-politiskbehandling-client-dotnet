@@ -45,14 +45,14 @@
                 "tilUtvalgNavn": {
                     "type": "string"
                 },
-                "tilMoeteId": {
+                "tilMøteId": {
                     "type": "string"
                 },
-                "tilMoetedato": {
+                "tilMøtedato": {
                     "type": "string",
                     "format": "date-time"
                 },
-                "rekkefoelge": {
+                "rekkefølge": {
                     "type": "integer"
                 }
             },
@@ -67,25 +67,25 @@
         "sak": {
             "type": "object",
             "properties": {
-                "referanseEksternNoekkel": {
+                "referanseEksternNøkkel": {
                     "type": "object",
                     "properties": {
                         "fagsystem": {
                             "type": "string"
                         },
-                        "noekkel": {
+                        "nøkkel": {
                             "type": "string"
                         }
                     },
                     "required": [
                         "fagsystem",
-                        "noekkel"
+                        "nøkkel"
                     ]
                 },
                 "fagsystemetsSaksnummer": {
                     "type": "object",
                     "properties": {
-                        "saksaar": {
+                        "saksår": {
                             "type": "integer"
                         },
                         "sakssekvensnummer": {
@@ -93,7 +93,7 @@
                         }
                     },
                     "required": [
-                        "saksaar",
+                        "saksår",
                         "sakssekvensnummer"
                     ]
                 },
@@ -185,7 +185,7 @@
                 }
             },
             "required": [
-                "referanseEksternNoekkel",
+                "referanseEksternNøkkel",
                 "fagsystemetsSaksnummer",
                 "tittel",
                 "saksansvarlig"

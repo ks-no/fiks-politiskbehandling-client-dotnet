@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://no.ks.fiks.politisk.behandling/ResultatMoteplan.v1.schema.json",
-  "title": "ResultatMoeteplan",
+  "title": "ResultatMøteplan",
   "definitions": {
     "Utvalg": {
       "type": "object",
@@ -12,10 +12,10 @@
         "utvalgNavn": {
           "type": "string"
         },
-        "moete": {
+        "møte": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Moete"
+            "$ref": "#/definitions/Møte"
           }
         }
       },
@@ -24,13 +24,13 @@
         "utvalgNavn"
       ]
     },
-    "Moete": {
+    "Møte": {
       "type": "object",
       "properties": {
-        "moeteid": {
+        "møteid": {
           "type": "string"
         },
-        "moetedato": {
+        "møtedato": {
           "type": "string",
           "format": "date-time"
         },
@@ -39,7 +39,7 @@
         }
       },
       "required": [
-        "moeteid"
+        "møteid"
       ]
     }
   },
