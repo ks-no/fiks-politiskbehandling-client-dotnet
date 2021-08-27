@@ -48,25 +48,25 @@
         "sak": {
             "type": "object",
             "properties": {
-                "referanseEksternNokkel": {
+                "referanseEksternNøkkel": {
                     "type": "object",
                     "properties": {
                         "fagsystem": {
                             "type": "string"
                         },
-                        "nokkel": {
+                        "nøkkel": {
                             "type": "string"
                         }
                     },
                     "required": [
                         "fagsystem",
-                        "nokkel"
+                        "nøkkel"
                     ]
                 },
                 "fagsystemetsSaksnummer": {
                     "type": "object",
                     "properties": {
-                        "saksaar": {
+                        "saksår": {
                             "type": "integer"
                         },
                         "sakssekvensnummer": {
@@ -74,14 +74,14 @@
                         }
                     },
                     "required": [
-                        "saksaar",
+                        "saksår",
                         "sakssekvensnummer"
                     ]
                 },
                 "utvalgetsSaksnummer": {
                     "type": "object",
                     "properties": {
-                        "saksaar": {
+                        "saksår": {
                             "type": "integer"
                         },
                         "sakssekvensnummer": {
@@ -89,7 +89,7 @@
                         }
                     },
                     "required": [
-                        "saksaar",
+                        "saksår",
                         "sakssekvensnummer"
                     ]
                 },
@@ -196,7 +196,7 @@
                 }
             },
             "required": [
-                "referanseEksternNokkel",
+                "referanseEksternNøkkel",
                 "fagsystemetsSaksnummer",
                 "tittel",
                 "vedtaksdato",

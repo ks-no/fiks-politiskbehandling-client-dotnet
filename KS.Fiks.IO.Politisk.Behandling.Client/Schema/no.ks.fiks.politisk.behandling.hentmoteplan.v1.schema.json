@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://no.ks.fiks.politisk.behandling/HentMoteplan.v1.schema.json",
-    "title": "HentMoteplan",
+    "title": "HentMøteplan",
     "definitions": {},
     "properties": {
         "utvalgId": {
@@ -10,11 +10,11 @@
         "utvalgNavn": {
             "type": "string"
         },
-        "fraMotedato": {
+        "fraMøtedato": {
             "type": "string",
             "format": "date"
         },
-        "tilMotedato": {
+        "tilMøtedato": {
             "type": "string",
             "format": "date"
         }
