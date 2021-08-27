@@ -39,25 +39,25 @@
     "VedtakFraUtvalgeinnsyn": {
       "type": "object",
       "properties": {
-        "referanseEksternNøkkel": {
+        "referanseEksternNokkel": {
           "type": "object",
           "properties": {
             "fagsystem": {
               "type": "string"
             },
-            "nøkkel": {
+            "nokkel": {
               "type": "string"
             }
           },
           "required": [
             "fagsystem",
-            "nøkkel"
+            "nokkel"
           ]
         },
         "utvalgetsSaksnummer": {
           "type": "object",
           "properties": {
-            "saksår": {
+            "saksaar": {
               "type": "integer"
             },
             "sakssekvensnummer": {
@@ -65,14 +65,14 @@
             }
           },
           "required": [
-            "saksår",
+            "saksaar",
             "sakssekvensnummer"
           ]
         },
         "arkivetsSaksnummer": {
           "type": "object",
           "properties": {
-            "saksår": {
+            "saksaar": {
               "type": "integer"
             },
             "sakssekvensnummer": {
@@ -80,7 +80,7 @@
             }
           },
           "required": [
-            "saksår",
+            "saksaar",
             "sakssekvensnummer"
           ]
         },
@@ -193,20 +193,20 @@
         }
       },
       "required": [
-        "referanseEksternNøkkel",
+        "referanseEksternNokkel",
         "utvalgetsSaksnummer",
         "tittel",
         "vedtaksdato",
         "saksansvarlig"
       ]
     },
-    "Møte": {
+    "Mote": {
       "type": "object",
       "properties": {
-        "møteid": {
+        "moteid": {
           "type": "string"
         },
-        "møtedato": {
+        "motedato": {
           "type": "string",
           "format": "date-time"
         },
@@ -215,7 +215,7 @@
         }
       },
       "required": [
-        "møteid"
+        "moteid"
       ]
     },
     "Utvalgsmedlem": {
@@ -227,7 +227,7 @@
         "navn": {
           "type": "string"
         },
-        "rekkefølge": {
+        "rekkefolge": {
           "type": "integer"
         },
         "representerer": {
@@ -251,13 +251,13 @@
       "required": [
         "medlemsId",
         "navn",
-        "rekkefølge"
+        "rekkefolge"
       ]
     },
     "Votering": {
       "type": "object",
       "properties": {
-        "møtedeltaker": {
+        "motedeltaker": {
           "type": "string"
         },
         "representerer": {
@@ -287,7 +287,7 @@
         }
       },
       "required": [
-        "møtedeltaker",
+        "motedeltaker",
         "representerer",
         "stemme"
       ]
@@ -295,13 +295,13 @@
   },
   "type": "object",
   "properties": {
-    "møte": {
+    "mote": {
       "type": "object",
       "properties": {
-        "møteid": {
+        "moteid": {
           "type": "string"
         },
-        "møtedato": {
+        "motedato": {
           "type": "string",
           "format": "date-time"
         },
@@ -310,7 +310,7 @@
         }
       },
       "required": [
-        "møteid"
+        "moteid"
       ]
     },
     "utvalg": {
@@ -322,10 +322,10 @@
         "utvalgNavn": {
           "type": "string"
         },
-        "møte": {
+        "mote": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Møte"
+            "$ref": "#/definitions/Mote"
           }
         },
         "medlem": {
@@ -366,7 +366,7 @@
     }
   },
   "required": [
-    "møte",
+    "mote",
     "utvalg",
     "avsender"
   ]
