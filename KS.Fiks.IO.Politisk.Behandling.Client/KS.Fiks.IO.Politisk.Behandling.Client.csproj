@@ -48,7 +48,7 @@
 
     <ItemGroup>
       <None Remove="Schema\no.ks.fiks.politisk.behandling.hentmoteplan.v1.schema.json" />
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.sendmøteplaneinnsyn.v1.schema.json" />
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.sendmoteplaneinnsyn.v1.schema.json" />
       <None Remove="Schema\no.ks.fiks.politisk.behandling.sendutvalgssakereinnsyn.v1.schema.json" />
       <None Remove="Schema\no.ks.fiks.politisk.behandling.sendvedtakeinnsyn.v1.schema.json" />
       <Content Include="Schema\no.ks.fiks.politisk.behandling.hentmoteplan.v1.schema.json">
@@ -81,7 +81,7 @@
           <PackageCopyToOutput>true</PackageCopyToOutput>
       </Content>
       <None Remove="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendmøteplaneinnsyn.v1.schema.json">
+      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendmoteplaneinnsyn.v1.schema.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
       <Content Include="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.v1.schema.json">
