@@ -1,0 +1,317 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://no.ks.fiks.politisk.behandling/SendUtvalgssakerEinnsyn.v1.schema.json",
+  "title": "SendUtvalgssakerEinnsyn",
+  "definitions": {
+    "Vedlegg": {
+      "type": "object",
+      "properties": {
+        "tittel": {
+          "type": "string"
+        },
+        "skjermetDokument": {
+          "type": "boolean"
+        },
+        "dokumenttype": {
+          "type": "object",
+          "properties": {
+            "kodeverdi": {
+              "type": "string"
+            },
+            "kodebeskrivelse": {
+              "type": "string"
+            }
+          }
+        },
+        "referanseDokumentfil": {
+          "type": "string"
+        },
+        "mimetype": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "tittel",
+        "skjermetDokument",
+        "referanseDokumentfil"
+      ]
+    },
+    "Utvalgssakeinnsyn": {
+      "type": "object",
+      "properties": {
+        "referanseEksternNøkkel": {
+          "type": "object",
+          "properties": {
+            "fagsystem": {
+              "type": "string"
+            },
+            "nøkkel": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "fagsystem",
+            "nøkkel"
+          ]
+        },
+        "utvalgetsSaksnummer": {
+          "type": "object",
+          "properties": {
+            "saksår": {
+              "type": "integer"
+            },
+            "sakssekvensnummer": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "saksår",
+            "sakssekvensnummer"
+          ]
+        },
+        "tittel": {
+          "type": "string"
+        },
+        "hoveddokument": {
+          "type": "object",
+          "properties": {
+            "tittel": {
+              "type": "string"
+            },
+            "skjermetDokument": {
+              "type": "boolean"
+            },
+            "dokumenttype": {
+              "type": "object",
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            },
+            "referanseDokumentfil": {
+              "type": "string"
+            },
+            "mimetype": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "tittel",
+            "skjermetDokument",
+            "referanseDokumentfil"
+          ]
+        },
+        "saksbeskrivelse": {
+          "type": "object",
+          "properties": {
+            "tekstInnhold": {
+              "type": "string"
+            },
+            "tekstFormat": {
+              "type": "object",
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "forslagTilVedtak": {
+          "type": "object",
+          "properties": {
+            "tekstInnhold": {
+              "type": "string"
+            },
+            "tekstFormat": {
+              "type": "object",
+              "properties": {
+                "kodeverdi": {
+                  "type": "string"
+                },
+                "kodebeskrivelse": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "skjerming": {
+          "type": "object",
+          "properties": {
+            "skjermingshjemmel": {
+              "type": "string"
+            },
+            "skjermingsvarighet": {
+              "type": "integer"
+            },
+            "skjermingOpphoererDato": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          "required": [
+            "skjermingshjemmel"
+          ]
+        },
+        "saksansvarlig": {
+          "type": "string"
+        },
+        "posisjon": {
+          "description": "Punkt",
+          "type": "object"
+        },
+        "vedlegg": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Vedlegg"
+          }
+        }
+      },
+      "required": [
+        "referanseEksternNøkkel",
+        "utvalgetsSaksnummer",
+        "tittel",
+        "saksansvarlig"
+      ]
+    },
+    "Møte": {
+      "type": "object",
+      "properties": {
+        "møteid": {
+          "type": "string"
+        },
+        "møtedato": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tittel": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "møteid"
+      ]
+    },
+    "Utvalgsmedlem": {
+      "type": "object",
+      "properties": {
+        "medlemsId": {
+          "type": "string"
+        },
+        "navn": {
+          "type": "string"
+        },
+        "rekkefølge": {
+          "type": "integer"
+        },
+        "representerer": {
+          "type": "string"
+        },
+        "funksjon": {
+          "type": "string"
+        },
+        "fraDato": {
+          "type": "string",
+          "format": "date"
+        },
+        "tilDato": {
+          "type": "string",
+          "format": "date"
+        },
+        "epost": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "medlemsId",
+        "navn",
+        "rekkefølge"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "møte": {
+      "type": "object",
+      "properties": {
+        "møteid": {
+          "type": "string"
+        },
+        "møtedato": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tittel": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "møteid"
+      ]
+    },
+    "utvalg": {
+      "type": "object",
+      "properties": {
+        "utvalgId": {
+          "type": "string"
+        },
+        "utvalgNavn": {
+          "type": "string"
+        },
+        "møte": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Møte"
+          }
+        },
+        "medlem": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Utvalgsmedlem"
+          }
+        }
+      },
+      "required": [
+        "utvalgId",
+        "utvalgNavn"
+      ]
+    },
+    "avsender": {
+      "type": "object",
+      "properties": {
+        "organisasjonsnummer": {
+          "type": "string"
+        },
+        "kommunenummer": {
+          "type": "string"
+        },
+        "navn": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "organisasjonsnummer"
+      ]
+    },
+    "sak": {
+      "description": "Utvalgssakeinnsyn",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Utvalgssakeinnsyn"
+      }
+    }
+  },
+  "required": [
+    "møte",
+    "utvalg",
+    "avsender"
+  ]
+}
