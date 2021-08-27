@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://no.ks.fiks.politisk.behandling/SendMoteplanEinnsyn.v1.schema.json",
-    "title": "SendMøteplanEinnsyn",
+    "title": "SendMoeteplanEinnsyn",
     "definitions": {
         "Utvalg": {
             "type": "object",
@@ -12,10 +12,10 @@
                 "utvalgNavn": {
                     "type": "string"
                 },
-                "møte": {
+                "moete": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/Møte"
+                        "$ref": "#/definitions/Moete"
                     }
                 },
                 "medlem": {
@@ -30,13 +30,13 @@
                 "utvalgNavn"
             ]
         },
-        "Møte": {
+        "Moete": {
             "type": "object",
             "properties": {
-                "møteid": {
+                "moeteid": {
                     "type": "string"
                 },
-                "møtedato": {
+                "moetedato": {
                     "type": "string",
                     "format": "date-time"
                 },
@@ -45,7 +45,7 @@
                 }
             },
             "required": [
-                "møteid"
+                "moeteid"
             ]
         },
         "Utvalgsmedlem": {
@@ -57,7 +57,7 @@
                 "navn": {
                     "type": "string"
                 },
-                "rekkefølge": {
+                "rekkefoelge": {
                     "type": "integer"
                 },
                 "representerer": {
@@ -81,7 +81,7 @@
             "required": [
                 "medlemsId",
                 "navn",
-                "rekkefølge"
+                "rekkefoelge"
             ]
         }
     },
