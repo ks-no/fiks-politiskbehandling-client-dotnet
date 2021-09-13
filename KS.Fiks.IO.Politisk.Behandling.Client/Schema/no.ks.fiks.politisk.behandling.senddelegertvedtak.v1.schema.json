@@ -3,7 +3,7 @@
   "$id": "https://no.ks.fiks.politisk.behandling/SendDelegertVedtak.v1.schema.json",
   "title": "SendDelegertVedtak",
   "definitions": {
-    "Vedlegg": {
+    "vedlegg": {
       "type": "object",
       "properties": {
         "tittel": {

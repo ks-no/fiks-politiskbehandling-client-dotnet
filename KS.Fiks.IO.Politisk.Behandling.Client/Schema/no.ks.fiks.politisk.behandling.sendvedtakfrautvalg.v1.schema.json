@@ -3,7 +3,7 @@
   "$id": "https://no.ks.fiks.politisk.behandling/SendVedtakFraUtvalg.v1.schema.json",
   "title": "SendVedtakFraUtvalg",
   "definitions": {
-    "Vedlegg": {
+    "vedlegg": {
       "type": "object",
       "properties": {
         "tittel": {
@@ -33,7 +33,7 @@
         "referanseDokumentfil"
       ]
     },
-    "Votering": {
+    "votering": {
       "type": "object",
       "properties": {
         "møtedeltaker": {

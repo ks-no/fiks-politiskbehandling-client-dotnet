@@ -3,7 +3,7 @@
   "$id": "https://no.ks.fiks.politisk.behandling/SendOrienteringssak.v1.schema.json",
   "title": "SendOrienteringssak",
     "definitions": {
-        "Vedlegg": {
+        "vedlegg": {
             "type": "object",
             "properties": {
                 "tittel": {
