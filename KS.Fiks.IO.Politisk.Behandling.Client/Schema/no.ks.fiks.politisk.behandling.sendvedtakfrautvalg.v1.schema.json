@@ -90,7 +90,7 @@
     "erEndeligVedtak": {
       "type": "boolean"
     },
-    "sak": {
+    "vedtakFraUtvalg": {
       "type": "object",
       "properties": {
         "referanseEksternNøkkel": {
@@ -145,7 +145,7 @@
           "type": "string",
           "format": "date"
         },
-        "status": {
+        "vedtaksType": {
           "type": "object",
           "properties": {
             "kodeverdi": {
@@ -259,6 +259,6 @@
     "møteId",
     "møtedato",
     "erEndeligVedtak",
-    "sak"
+    "vedtakFraUtvalg"
   ]
 }
