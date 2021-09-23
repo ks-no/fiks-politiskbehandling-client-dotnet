@@ -233,13 +233,13 @@
         "vedlegg": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Vedlegg"
+            "$ref": "#/definitions/vedlegg"
           }
         },
         "votering": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Votering"
+            "$ref": "#/definitions/votering"
           }
         }
       },

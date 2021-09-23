@@ -200,7 +200,7 @@
         "vedlegg": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Vedlegg"
+            "$ref": "#/definitions/vedlegg"
           }
         }
       },
