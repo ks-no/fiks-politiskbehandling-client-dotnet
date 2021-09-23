@@ -3,7 +3,7 @@
   "$id": "https://no.ks.fiks.politisk.behandling/SendUtvalgssak.v1.schema.json",
   "title": "SendUtvalgssak",
     "definitions": {
-        "Vedlegg": {
+        "vedlegg": {
             "type": "object",
             "properties": {
                 "tittel": {
@@ -193,7 +193,7 @@
         "vedlegg": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Vedlegg"
+            "$ref": "#/definitions/vedlegg"
           }
         }
       },
