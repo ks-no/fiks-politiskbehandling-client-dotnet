@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://no.ks.fiks.politisk.behandling/SendOrienteringssak.v1.schema.json",
+  "title": "SendOrienteringssak",
+  "definitions": {},
+  "type": "object",
+  "properties": {
+    "sak": {
+      "type": "object",
+      "properties": {
+        "saksnummer": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "saksnummer"
+      ]
+    }
+  },
+  "required": [
+    "sak"
+  ]
+}
