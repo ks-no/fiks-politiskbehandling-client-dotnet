@@ -10,10 +10,14 @@
       "properties": {
         "saksnummer": {
           "type": "string"
+        },
+        "registrertDato": {
+          "type": "date"
         }
       },
       "required": [
-        "saksnummer"
+        "saksnummer",
+        "registrertDato"
       ]
     }
   },

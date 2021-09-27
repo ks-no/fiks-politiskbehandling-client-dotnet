@@ -10,10 +10,14 @@
       "properties": {
         "vedtaksnummer": {
           "type": "string"
+        },
+        "registrertDato": {
+          "type": "date"
         }
       },
       "required": [
-        "vedtaksnummer"
+        "vedtaksnummer",
+        "registrertDato"
       ]
     }
   },
