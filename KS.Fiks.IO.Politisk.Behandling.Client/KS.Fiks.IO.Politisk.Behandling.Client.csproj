@@ -72,44 +72,24 @@
           <PackageCopyToOutput>true</PackageCopyToOutput>
       </Content>
       <None Remove="Schema\no.ks.fiks.politisk.behandling.senddelegertvedtak.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.senddelegertvedtak.resultat.v1.schema.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        <Pack>true</Pack>
-        <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
       <Content Include="Schema\no.ks.fiks.politisk.behandling.senddelegertvedtak.v1.schema.json">
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
           <Pack>true</Pack>
           <PackageCopyToOutput>true</PackageCopyToOutput>
       </Content>
       <None Remove="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.resultat.v1.schema.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        <Pack>true</Pack>
-        <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
       <Content Include="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.v1.schema.json">
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
           <Pack>true</Pack>
           <PackageCopyToOutput>true</PackageCopyToOutput>
       </Content>
       <None Remove="Schema\no.ks.fiks.politisk.behandling.sendutvalgssak.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendutvalgssak.resultat.v1.schema.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        <Pack>true</Pack>
-        <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
       <Content Include="Schema\no.ks.fiks.politisk.behandling.sendutvalgssak.v1.schema.json">
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
           <Pack>true</Pack>
           <PackageCopyToOutput>true</PackageCopyToOutput>
       </Content>
       <None Remove="Schema\no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.resultat.v1.schema.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        <Pack>true</Pack>
-        <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
       <Content Include="Schema\no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.v1.schema.json">
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
           <Pack>true</Pack>
