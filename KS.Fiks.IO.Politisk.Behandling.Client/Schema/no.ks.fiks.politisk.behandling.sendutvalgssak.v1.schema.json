@@ -195,6 +195,27 @@
           "items": {
             "$ref": "#/definitions/vedlegg"
           }
+        },
+        "referanseForelderMappeEksternNoekkel":{
+          "type": "string"
+        },
+        "referanseForelderMappe": {
+          "type": "string"
+        },
+        "arkivSaksnummer": {
+          "type": "integer"
+        },
+        "referanseRegistreringEksternNoekkel": {
+          "type": "string"
+        },
+        "referanseRegistrering": {
+          "type": "string"
+        },
+        "arkivJournalnummer": {
+          "type": "integer"
+        },
+        "arkivJournalpostnummer": {
+          "type": "integer"
         }
       },
       "required": [
