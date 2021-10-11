@@ -3,11 +3,11 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Models
     public class PolitiskBehandlingMeldingTypeV1
     {
         // Forespørsler
-        public const string HentMøteplan = "no.ks.fiks.politisk.behandling.klient.hentmoteplan.v1";
+        public const string HentMoeteplan = "no.ks.fiks.politisk.behandling.klient.hentmoeteplan.v1";
         public const string HentUtvalg = "no.ks.fiks.politisk.behandling.klient.hentutvalg.v1";
         
         // Resultat
-        public const string ResultatMøteplan = "no.ks.fiks.politisk.behandling.tjener.resultatmoteplan.v1";
+        public const string ResultatMoeteplan = "no.ks.fiks.politisk.behandling.tjener.resultatmoeteplan.v1";
         public const string ResultatUtvalg = "no.ks.fiks.politisk.behandling.tjener.resultatutvalg.v1";
         public const string ResultatSendVedtakFraUtvalg = "no.ks.fiks.politisk.behandling.tjener.sendvedtakfrautvalg.v1";
         public const string Mottatt = "no.ks.fiks.politisk.behandling.mottatt.v1";
@@ -18,7 +18,7 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Models
         public const string SendDelegertVedtak = "no.ks.fiks.politisk.behandling.klient.senddelegertvedtak.v1";
         
         // eInnsyn
-        public const string SendMøteplanTilEInnsyn = "no.ks.fiks.politisk.behandling.eInnsyn.sendmoteplan.v1";
+        public const string SendMoeteplanTilEInnsyn = "no.ks.fiks.politisk.behandling.eInnsyn.sendmoeteplan.v1";
         public const string SendUtvalgssakerTilEInnsyn = "no.ks.fiks.politisk.behandling.eInnsyn.sendutvalgssaker.v1";
         //public const string SendMøtedokumenterTilEInnsyn = "";
         public const string SendVedtakTilEInnsyn = "no.ks.fiks.politisk.behandling.eInnsyn.sendvedtak.v1";

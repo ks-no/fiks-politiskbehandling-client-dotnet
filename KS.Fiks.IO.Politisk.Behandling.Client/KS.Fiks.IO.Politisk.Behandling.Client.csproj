@@ -47,24 +47,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.hentmoteplan.v1.schema.json"/>
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.hentmoteplan.v1.schema.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-          <Pack>true</Pack>
-          <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.hentmoeteplan.v1.schema.json" />
       <None Remove="Schema\no.ks.fiks.politisk.behandling.hentutvalg.v1.schema.json" />
       <Content Include="Schema\no.ks.fiks.politisk.behandling.hentutvalg.v1.schema.json">
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
           <Pack>true</Pack>
           <PackageCopyToOutput>true</PackageCopyToOutput>
       </Content>
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.resultatmoteplan.v1.schema.json"/>
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.resultatmoteplan.v1.schema.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-          <Pack>true</Pack>
-          <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>        
+      <None Remove="Schema\no.ks.fiks.politisk.behandling.resultatmoeteplan.v1.schema.json" />        
       <None Remove="Schema\no.ks.fiks.politisk.behandling.resultatutvalg.v1.schema.json" />
       <Content Include="Schema\no.ks.fiks.politisk.behandling.resultatutvalg.v1.schema.json">
           <CopyToOutputDirectory>Always</CopyToOutputDirectory>
