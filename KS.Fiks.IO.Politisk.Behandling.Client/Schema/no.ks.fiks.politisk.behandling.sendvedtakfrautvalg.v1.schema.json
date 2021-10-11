@@ -241,6 +241,59 @@
           "items": {
             "$ref": "#/definitions/votering"
           }
+        },
+        "referanseForelderMappeEksternNoekkel":{
+          "type": "object",
+          "properties": {
+            "fagsystem": {
+              "type": "string"
+            },
+            "noekkel": {
+              "type": "string"
+            }
+          }
+        },
+        "referanseForelderMappe": {
+          "type": "string"
+        },
+        "arkivSaksnummer": {
+          "type": "object",
+          "properties": {
+            "saksaar": {
+              "type": "integer"
+            },
+            "sakssekvensnummer": {
+              "type": "integer"
+            }
+          }
+        },
+        "referanseRegistreringEksternNoekkel": {
+          "type": "object",
+          "properties": {
+            "fagsystem": {
+              "type": "string"
+            },
+            "noekkel": {
+              "type": "string"
+            }
+          }
+        },
+        "referanseRegistrering": {
+          "type": "string"
+        },
+        "arkivJournalnummer": {
+          "type": "object",
+          "properties": {
+            "journalaar": {
+              "type": "integer"
+            },
+            "journalsekvensnummer": {
+              "type": "integer"
+            }
+          }
+        },
+        "arkivJournalpostnummer": {
+          "type": "integer"
         }
       },
       "required": [
