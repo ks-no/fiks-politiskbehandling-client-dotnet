@@ -1,15 +1,23 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://no.ks.fiks.politisk.behandling/HentMoeteplan.v1.schema.json",
-  "title": "HentMoeteplan",
-  "definitions": {},
-  "type": "object",
-  "properties": {
-    "utvalgId": {
-      "type": "string"
-    },
-    "utvalgNavn": {
-      "type": "string"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://no.ks.fiks.politisk.behandling/HentMoeteplan.v1.schema.json",
+    "title": "HentMoeteplan",
+    "definitions": {},
+    "type": "object",
+    "properties": {
+        "utvalgId": {
+            "type": "string"
+        },
+        "utvalgNavn": {
+            "type": "string"
+        },
+        "fraMoetedato": {
+            "type": "string",
+            "format": "date"
+        },
+        "tilMoetedato": {
+            "type": "string",
+            "format": "date"
+        }
     }
-  }
 }

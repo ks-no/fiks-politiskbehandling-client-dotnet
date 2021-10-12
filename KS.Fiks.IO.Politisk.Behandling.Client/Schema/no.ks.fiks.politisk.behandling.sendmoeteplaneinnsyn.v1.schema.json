@@ -1,0 +1,118 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://no.ks.fiks.politisk.behandling/SendMoeteplanEinnsyn.v1.schema.json",
+    "title": "SendMoeteplanEinnsyn",
+    "definitions": {
+        "Utvalg": {
+            "type": "object",
+            "properties": {
+                "utvalgId": {
+                    "type": "string"
+                },
+                "utvalgNavn": {
+                    "type": "string"
+                },
+                "moete": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Moete"
+                    }
+                },
+                "medlem": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Utvalgsmedlem"
+                    }
+                }
+            },
+            "required": [
+                "utvalgId",
+                "utvalgNavn"
+            ]
+        },
+        "Moete": {
+            "type": "object",
+            "properties": {
+                "moeteid": {
+                    "type": "string"
+                },
+                "moetedato": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "tittel": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "moeteid"
+            ]
+        },
+        "Utvalgsmedlem": {
+            "type": "object",
+            "properties": {
+                "medlemsId": {
+                    "type": "string"
+                },
+                "navn": {
+                    "type": "string"
+                },
+                "rekkefoelge": {
+                    "type": "integer"
+                },
+                "representerer": {
+                    "type": "string"
+                },
+                "funksjon": {
+                    "type": "string"
+                },
+                "fraDato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "tilDato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "epost": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "medlemsId",
+                "navn",
+                "rekkefoelge"
+            ]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "avsender": {
+            "type": "object",
+            "properties": {
+                "organisasjonsnummer": {
+                    "type": "string"
+                },
+                "kommunenummer": {
+                    "type": "string"
+                },
+                "navn": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "organisasjonsnummer"
+            ]
+        },
+        "utvalg": {
+            "description": "Utvalg",
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Utvalg"
+            }
+        }
+    },
+    "required": [
+        "avsender"
+    ]
+}
