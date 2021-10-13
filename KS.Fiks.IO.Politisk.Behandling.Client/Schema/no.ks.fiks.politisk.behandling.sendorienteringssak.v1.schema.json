@@ -244,12 +244,6 @@
                 "saksansvarlig"
             ]
         },
-        "required": [
-            "referanseEksternNoekkel",
-            "fagsystemetsSaksnummer",
-            "tittel",
-            "saksansvarlig"
-        ],
         "forslagTilBehandlingsplan": {
             "type": "array",
             "items": {
