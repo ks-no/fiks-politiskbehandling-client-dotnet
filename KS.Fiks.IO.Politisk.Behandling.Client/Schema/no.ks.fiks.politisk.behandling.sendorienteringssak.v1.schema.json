@@ -245,7 +245,7 @@
             ]
         },
         "required": [
-            "referanseEksternNøkkel",
+            "referanseEksternNoekkel",
             "fagsystemetsSaksnummer",
             "tittel",
             "saksansvarlig"
