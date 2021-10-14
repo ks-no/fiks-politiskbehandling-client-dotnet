@@ -2,41 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://no.ks.fiks.politisk.behandling/SendDelegertVedtak.v1.schema.json",
     "title": "SendDelegertVedtak",
-    "definitions": {
-        "Vedlegg": {
-            "type": "object",
-            "properties": {
-                "tittel": {
-                    "type": "string"
-                },
-                "skjermetDokument": {
-                    "type": "boolean"
-                },
-                "dokumenttype": {
-                    "type": "object",
-                    "properties": {
-                        "kodeverdi": {
-                            "type": "string"
-                        },
-                        "kodebeskrivelse": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "referanseDokumentfil": {
-                    "type": "string"
-                },
-                "mimetype": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "tittel",
-                "skjermetDokument",
-                "referanseDokumentfil"
-            ]
-        }
-    },
+    "definitions": {},
     "type": "object",
     "properties": {
         "tilUtvalgId": {
@@ -111,39 +77,6 @@
                         }
                     }
                 },
-                "hoveddokument": {
-                    "type": "object",
-                    "properties": {
-                        "tittel": {
-                            "type": "string"
-                        },
-                        "skjermetDokument": {
-                            "type": "boolean"
-                        },
-                        "dokumenttype": {
-                            "type": "object",
-                            "properties": {
-                                "kodeverdi": {
-                                    "type": "string"
-                                },
-                                "kodebeskrivelse": {
-                                    "type": "string"
-                                }
-                            }
-                        },
-                        "referanseDokumentfil": {
-                            "type": "string"
-                        },
-                        "mimetype": {
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "tittel",
-                        "skjermetDokument",
-                        "referanseDokumentfil"
-                    ]
-                },
                 "vedtak": {
                     "type": "object",
                     "properties": {
@@ -187,12 +120,6 @@
                 "posisjon": {
                     "description": "Punkt",
                     "type": "object"
-                },
-                "vedlegg": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Vedlegg"
-                    }
                 },
                 "referanseForelderMappeEksternNoekkel": {
                     "type": "object",
