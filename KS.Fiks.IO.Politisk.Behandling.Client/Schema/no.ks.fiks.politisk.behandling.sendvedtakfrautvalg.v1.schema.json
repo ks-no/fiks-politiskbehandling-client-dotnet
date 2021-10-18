@@ -3,39 +3,6 @@
     "$id": "https://no.ks.fiks.politisk.behandling/SendVedtakFraUtvalg.v1.schema.json",
     "title": "SendVedtakFraUtvalg",
     "definitions": {
-        "Vedlegg": {
-            "type": "object",
-            "properties": {
-                "tittel": {
-                    "type": "string"
-                },
-                "skjermetDokument": {
-                    "type": "boolean"
-                },
-                "dokumenttype": {
-                    "type": "object",
-                    "properties": {
-                        "kodeverdi": {
-                            "type": "string"
-                        },
-                        "kodebeskrivelse": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "referanseDokumentfil": {
-                    "type": "string"
-                },
-                "mimetype": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "tittel",
-                "skjermetDokument",
-                "referanseDokumentfil"
-            ]
-        },
         "Votering": {
             "type": "object",
             "properties": {
@@ -159,39 +126,6 @@
                         }
                     }
                 },
-                "hoveddokument": {
-                    "type": "object",
-                    "properties": {
-                        "tittel": {
-                            "type": "string"
-                        },
-                        "skjermetDokument": {
-                            "type": "boolean"
-                        },
-                        "dokumenttype": {
-                            "type": "object",
-                            "properties": {
-                                "kodeverdi": {
-                                    "type": "string"
-                                },
-                                "kodebeskrivelse": {
-                                    "type": "string"
-                                }
-                            }
-                        },
-                        "referanseDokumentfil": {
-                            "type": "string"
-                        },
-                        "mimetype": {
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "tittel",
-                        "skjermetDokument",
-                        "referanseDokumentfil"
-                    ]
-                },
                 "vedtak": {
                     "type": "object",
                     "properties": {
@@ -235,12 +169,6 @@
                 "posisjon": {
                     "description": "Punkt",
                     "type": "object"
-                },
-                "vedlegg": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Vedlegg"
-                    }
                 },
                 "votering": {
                     "type": "array",

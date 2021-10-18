@@ -3,39 +3,6 @@
     "$id": "https://no.ks.fiks.politisk.behandling/SendOrienteringssak.v1.schema.json",
     "title": "SendOrienteringssak",
     "definitions": {
-        "Vedlegg": {
-            "type": "object",
-            "properties": {
-                "tittel": {
-                    "type": "string"
-                },
-                "skjermetDokument": {
-                    "type": "boolean"
-                },
-                "dokumenttype": {
-                    "type": "object",
-                    "properties": {
-                        "kodeverdi": {
-                            "type": "string"
-                        },
-                        "kodebeskrivelse": {
-                            "type": "string"
-                        }
-                    }
-                },
-                "referanseDokumentfil": {
-                    "type": "string"
-                },
-                "mimetype": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "tittel",
-                "skjermetDokument",
-                "referanseDokumentfil"
-            ]
-        },
         "Behandlingsplan": {
             "type": "object",
             "properties": {
@@ -100,39 +67,6 @@
                 "tittel": {
                     "type": "string"
                 },
-                "hoveddokument": {
-                    "type": "object",
-                    "properties": {
-                        "tittel": {
-                            "type": "string"
-                        },
-                        "skjermetDokument": {
-                            "type": "boolean"
-                        },
-                        "dokumenttype": {
-                            "type": "object",
-                            "properties": {
-                                "kodeverdi": {
-                                    "type": "string"
-                                },
-                                "kodebeskrivelse": {
-                                    "type": "string"
-                                }
-                            }
-                        },
-                        "referanseDokumentfil": {
-                            "type": "string"
-                        },
-                        "mimetype": {
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "tittel",
-                        "skjermetDokument",
-                        "referanseDokumentfil"
-                    ]
-                },
                 "saksbeskrivelse": {
                     "type": "object",
                     "properties": {
@@ -176,12 +110,6 @@
                 "posisjon": {
                     "description": "Punkt",
                     "type": "object"
-                },
-                "vedlegg": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Vedlegg"
-                    }
                 },
                 "referanseForelderMappeEksternNoekkel": {
                     "type": "object",
