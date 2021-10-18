@@ -1,100 +1,118 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <TargetFrameworks>netcoreapp3.1;netstandard2.0</TargetFrameworks>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Title>KS FIKS IO Politisk Behandling Client</Title>
-        <Authors>Ks-Kommunesektorens Organisasjon</Authors>
-        <Copyright>Ks-Kommunesektorens Organisasjon</Copyright>
-        <PackageProjectUrl>https://github.com/ks-no/fiks-politiskbehandling-client-dotnet</PackageProjectUrl>
-        <Company>Ks-Kommunesektorens Organisasjon</Company>
-        <AssemblyVersion>0.0.0.1</AssemblyVersion>
-        <FileVersion>0.0.0.1</FileVersion>
-        <SignAssembly>true</SignAssembly>
-        <AssemblyOriginatorKeyFile>fiks-io-strongly-named-key.snk</AssemblyOriginatorKeyFile>
-        <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageIcon>KS.png</PackageIcon>
-        <RepositoryUrl>git@github.com:ks-no/fiks-politiskbehandling-client-dotnet.git</RepositoryUrl>
-        <RepositoryType>git</RepositoryType>
-        <PackageTags>FIKS</PackageTags>
-        <IncludeSymbols>true</IncludeSymbols>
-        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-        <VersionPrefix>0.0.6</VersionPrefix>
-        <LangVersion>9</LangVersion>
-        <RootNamespace>KS.Fiks.IO.Politiskbehandling.Client</RootNamespace>
-    </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>netcoreapp3.1;netstandard2.0</TargetFrameworks>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Title>KS FIKS IO Politisk Behandling Client</Title>
+		<Authors>Ks-Kommunesektorens Organisasjon</Authors>
+		<Copyright>Ks-Kommunesektorens Organisasjon</Copyright>
+		<PackageProjectUrl>https://github.com/ks-no/fiks-politiskbehandling-client-dotnet</PackageProjectUrl>
+		<Company>Ks-Kommunesektorens Organisasjon</Company>
+		<AssemblyVersion>0.0.0.1</AssemblyVersion>
+		<FileVersion>0.0.0.1</FileVersion>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>fiks-io-strongly-named-key.snk</AssemblyOriginatorKeyFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageIcon>KS.png</PackageIcon>
+		<RepositoryUrl>git@github.com:ks-no/fiks-politiskbehandling-client-dotnet.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>FIKS</PackageTags>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<VersionPrefix>0.0.11</VersionPrefix>
+		<LangVersion>9</LangVersion>
+		<RootNamespace>KS.Fiks.IO.Politiskbehandling.Client</RootNamespace>
+	</PropertyGroup>
 
-    <ItemGroup>
-        <None Include="fiks-io-strongly-named-key.snk">
-            <Link>fiks-io-strongly-named-key.snk</Link>
-        </None>
-        <None Include="KS.png">
-            <Pack>true</Pack>
-            <PackagePath>/</PackagePath>
-        </None>
-        <None Include="LICENSE">
-            <Pack>true</Pack>
-            <PackagePath>/</PackagePath>
-        </None>
-        <None Include="../README.md">
-            <Pack>true</Pack>
-            <PackagePath>/</PackagePath>
-        </None>
-    </ItemGroup>
-    
-    <ItemGroup>
-      <Folder Include="Models\" />
-    </ItemGroup>
+	<ItemGroup>
+		<None Include="fiks-io-strongly-named-key.snk">
+			<Link>fiks-io-strongly-named-key.snk</Link>
+		</None>
+		<None Include="KS.png">
+			<Pack>true</Pack>
+			<PackagePath>/</PackagePath>
+		</None>
+		<None Include="LICENSE">
+			<Pack>true</Pack>
+			<PackagePath>/</PackagePath>
+		</None>
+		<None Include="../README.md">
+			<Pack>true</Pack>
+			<PackagePath>/</PackagePath>
+		</None>
+	</ItemGroup>
+	
+	<ItemGroup>
+		<Folder Include="Models\" />
+	</ItemGroup>
 
-    <ItemGroup>
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.hentmoteplan.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.hentmoteplan.v1.schema.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-          <Pack>true</Pack>
-          <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.hentutvalg.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.hentutvalg.v1.schema.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-          <Pack>true</Pack>
-          <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.resultatmoteplan.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.resultatmoteplan.v1.schema.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-          <Pack>true</Pack>
-          <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>        
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.resultatutvalg.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.resultatutvalg.v1.schema.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-          <Pack>true</Pack>
-          <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.senddelegertvedtak.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.senddelegertvedtak.v1.schema.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-          <Pack>true</Pack>
-          <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.v1.schema.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-          <Pack>true</Pack>
-          <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.sendutvalgssak.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendutvalgssak.v1.schema.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-          <Pack>true</Pack>
-          <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
-      <None Remove="Schema\no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.v1.schema.json" />
-      <Content Include="Schema\no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.v1.schema.json">
-          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-          <Pack>true</Pack>
-          <PackageCopyToOutput>true</PackageCopyToOutput>
-      </Content>
-    </ItemGroup>
+	<ItemGroup>
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.hentmoeteplan.v1.schema.json" />
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.resultatmoeteplan.v1.schema.json" />
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.sendmoeteplaneinnsyn.v1.schema.json" />
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.sendutvalgssakereinnsyn.v1.schema.json" />
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.sendvedtakeinnsyn.v1.schema.json" />
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.hentmoeteplan.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.hentutvalg.v1.schema.json" />
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.hentutvalg.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.resultatmoeteplan.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.resultatutvalg.v1.schema.json" />
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.resultatutvalg.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.senddelegertvedtak.v1.schema.json" />
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.senddelegertvedtak.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.v1.schema.json" />
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.sendmoeteplaneinnsyn.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.sendorienteringssak.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.sendutvalgssak.v1.schema.json" />
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.sendutvalgssak.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Schema\no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.v1.schema.json" />
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.sendutvalgssakereinnsyn.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.sendvedtakeinnsyn.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<Content Include="Schema\no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+	</ItemGroup>
 
 </Project>
