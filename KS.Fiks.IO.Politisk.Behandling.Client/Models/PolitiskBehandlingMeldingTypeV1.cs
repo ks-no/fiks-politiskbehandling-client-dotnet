@@ -12,7 +12,7 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Models
 
         // Utsendelser 
         public const string SendVedtakFraUtvalg = "no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.v1";
-        public const string SendVedtakFraUtvalgKvittering = "no.ks.fiks.politisk.behandling.tjener.sendvedtakfrautvalg.kvittering.v1";
+        public const string SendVedtakFraUtvalgKvittering = "no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.kvittering.v1";
 
         // Innsendelser
         public const string SendUtvalgssak = "no.ks.fiks.politisk.behandling.sendutvalgssak.v1";
@@ -23,9 +23,8 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Models
         public const string SendDelegertVedtakKvittering = "no.ks.fiks.politisk.behandling.senddelegertvedtak.kvittering.v1";
 
         // eInnsyn
-        public const string SendMoeteplanTilEInnsyn = "no.ks.fiks.politisk.behandling.eInnsyn.sendmoeteplan.v1";
-        public const string SendUtvalgssakerTilEInnsyn = "no.ks.fiks.politisk.behandling.eInnsyn.sendutvalgssaker.v1";
-        //public const string SendMøtedokumenterTilEInnsyn = "";
-        public const string SendVedtakTilEInnsyn = "no.ks.fiks.politisk.behandling.eInnsyn.sendvedtak.v1";
+        public const string SendMoeteplanTilEInnsyn = "no.ks.fiks.politisk.behandling.eInnsyn.sendmoeteplan.v1"; //TODO er dette eller schema navn korrekt?
+        public const string SendUtvalgssakerTilEInnsyn = "no.ks.fiks.politisk.behandling.eInnsyn.sendutvalgssaker.v1"; //TODO er dette eller schema navn korrekt?
+        public const string SendVedtakTilEInnsyn = "no.ks.fiks.politisk.behandling.eInnsyn.sendvedtak.v1"; //TODO er dette eller schema navn korrekt?
     }
 }
