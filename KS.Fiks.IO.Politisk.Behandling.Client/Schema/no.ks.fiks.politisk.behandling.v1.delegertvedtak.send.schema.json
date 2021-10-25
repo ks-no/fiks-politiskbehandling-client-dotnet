@@ -1,64 +1,15 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://no.ks.fiks.politisk.behandling/SendVedtakFraUtvalg.v1.schema.json",
-    "title": "SendVedtakFraUtvalg",
-    "definitions": {
-        "Votering": {
-            "type": "object",
-            "properties": {
-                "moetedeltaker": {
-                    "type": "string"
-                },
-                "representerer": {
-                    "type": "string"
-                },
-                "stemme": {
-                    "type": "object",
-                    "properties": {
-                        "Ja": {
-                            "description": "None",
-                            "type": "object"
-                        },
-                        "Nei": {
-                            "description": "None",
-                            "type": "object"
-                        },
-                        "Blankt": {
-                            "description": "None",
-                            "type": "object"
-                        }
-                    },
-                    "required": [
-                        "Ja",
-                        "Nei",
-                        "Blankt"
-                    ]
-                }
-            },
-            "required": [
-                "moetedeltaker",
-                "representerer",
-                "stemme"
-            ]
-        }
-    },
+    "$id": "https://no.ks.fiks.politisk.behandling.v1/delegertVedtak.send.schema.json",
+    "title": "SendDelegertVedtak",
+    "definitions": {},
     "type": "object",
     "properties": {
-        "utvalgId": {
+        "tilUtvalgId": {
             "type": "string"
         },
-        "utvalgNavn": {
+        "tilUtvalgNavn": {
             "type": "string"
-        },
-        "moeteId": {
-            "type": "string"
-        },
-        "moetedato": {
-            "type": "string",
-            "format": "date-time"
-        },
-        "erEndeligVedtak": {
-            "type": "boolean"
         },
         "sak": {
             "type": "object",
@@ -170,12 +121,6 @@
                     "description": "Punkt",
                     "type": "object"
                 },
-                "votering": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/Votering"
-                    }
-                },
                 "referanseForelderMappeEksternNoekkel": {
                     "type": "object",
                     "properties": {
@@ -233,19 +178,16 @@
             "required": [
                 "referanseEksternNoekkel",
                 "fagsystemetsSaksnummer",
-                "utvalgetsSaksnummer",
                 "tittel",
                 "vedtaksdato",
+                "status",
                 "saksansvarlig"
             ]
         }
     },
     "required": [
-        "utvalgId",
-        "utvalgNavn",
-        "moeteId",
-        "moetedato",
-        "erEndeligVedtak",
+        "tilUtvalgId",
+        "tilUtvalgNavn",
         "sak"
     ]
 }
