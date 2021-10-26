@@ -44,6 +44,7 @@
 	
 	<ItemGroup>
 		<Folder Include="Models\" />
+		<Folder Include="Samples\utvalg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -52,6 +53,14 @@
 		<None Remove="Schema\no.ks.fiks.politisk.behandling.sendmoeteplaneinnsyn.v1.schema.json" />
 		<None Remove="Schema\no.ks.fiks.politisk.behandling.sendutvalgssakereinnsyn.v1.schema.json" />
 		<None Remove="Schema\no.ks.fiks.politisk.behandling.sendvedtakeinnsyn.v1.schema.json" />
+		<Content Include="Samples\delegertvedtak\sampleSendDelegertVedtak_InvalidExtraProperties.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		  <Pack>true</Pack>
+		  <PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<Content Include="Samples\utvalgssak\sampleSendUtvalgssak_InvalidMissingRequiredProperty.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
 		<Content Include="Schema\no.ks.fiks.politisk.behandling.hentmoeteplan.v1.schema.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<Pack>true</Pack>
@@ -109,6 +118,30 @@
 			<PackageCopyToOutput>true</PackageCopyToOutput>
 		</Content>
 		<Content Include="Schema\no.ks.fiks.politisk.behandling.sendvedtakfrautvalg.v1.schema.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Samples\utvalgssak\sampleSendUtvalgsak.json" />
+		<Content Include="Samples\utvalgssak\sampleSendUtvalgssak.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Samples\orienteringssak\sampleSendOrienteringssak.json" />
+		<Content Include="Samples\orienteringssak\sampleSendOrienteringssak.json">
+		  	<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Samples\delegertvedtak\sampleSendDelegertVedtak.json" />
+		<Content Include="Samples\delegertvedtak\sampleSendDelegertVedtak.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Samples\moeteplan\sampleHentMoeteplan.json" />
+		<Content Include="Samples\moeteplan\sampleHentMoeteplan.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<Pack>true</Pack>
 			<PackageCopyToOutput>true</PackageCopyToOutput>
