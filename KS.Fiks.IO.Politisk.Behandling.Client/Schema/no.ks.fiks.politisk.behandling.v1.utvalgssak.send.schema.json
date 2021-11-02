@@ -195,10 +195,12 @@
             "type": "array",
             "items": {
                 "$ref": "#/definitions/Behandlingsplan"
-            }
+            },
+            "minItems": 1
         }
     },
     "required": [
-        "sak"
+        "sak",
+        "forslagTilBehandlingsplan"
     ]
 }

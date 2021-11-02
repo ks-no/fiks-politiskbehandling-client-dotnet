@@ -19,7 +19,7 @@
 		<PackageTags>FIKS</PackageTags>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<VersionPrefix>0.0.12</VersionPrefix>
+		<VersionPrefix>0.0.14</VersionPrefix>
 		<LangVersion>9</LangVersion>
 		<RootNamespace>KS.Fiks.IO.Politiskbehandling.Client</RootNamespace>
 	</PropertyGroup>
@@ -44,12 +44,9 @@
 	
 	<ItemGroup>
 		<Folder Include="Models\" />
+		<Folder Include="Samples\utvalg" />
 	</ItemGroup>
-
-	<ItemGroup>
-
-	</ItemGroup>
-
+	
 	<ItemGroup>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.delegertvedtak.send.schema.json" />
 	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.delegertvedtak.send.schema.json">
@@ -117,6 +114,29 @@
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
 	  </Content>
+		<None Remove="Samples\utvalgssak\sampleSendUtvalgsak.json" />
+		<Content Include="Samples\utvalgssak\sampleSendUtvalgssak.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Samples\orienteringssak\sampleSendOrienteringssak.json" />
+		<Content Include="Samples\orienteringssak\sampleSendOrienteringssak.json">
+		  	<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Samples\delegertvedtak\sampleSendDelegertVedtak.json" />
+		<Content Include="Samples\delegertvedtak\sampleSendDelegertVedtak.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Samples\moeteplan\sampleHentMoeteplan.json" />
+		<Content Include="Samples\moeteplan\sampleHentMoeteplan.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
 	</ItemGroup>
-
 </Project>
