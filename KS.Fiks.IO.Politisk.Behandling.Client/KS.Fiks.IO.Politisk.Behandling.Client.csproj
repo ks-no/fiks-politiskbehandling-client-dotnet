@@ -138,5 +138,17 @@
 			<Pack>true</Pack>
 			<PackageCopyToOutput>true</PackageCopyToOutput>
 		</Content>
+		<None Remove="Samples\delegertvedtak\sampleSendDelegertVedtak_InvalidExtraProperties.json" />
+		<Content Include="Samples\delegertvedtak\sampleSendDelegertVedtak_InvalidExtraProperties.json">
+		  	<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		  	<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<None Remove="Samples\utvalgssak\sampleSendUtvalgssak_InvalidMissingRequiredProperty.json" />
+		<Content Include="Samples\utvalgssak\sampleSendUtvalgssak_InvalidMissingRequiredProperty.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
 	</ItemGroup>
 </Project>
