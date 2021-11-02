@@ -1,36 +1,65 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://no.ks.fiks.politisk.behandling/SendUtvalgssak.v1.schema.json",
-    "title": "SendUtvalgssak",
+    "$id": "https://no.ks.fiks.politisk.behandling.v1/vedtakFraUtvalg.send.schema.json",
+    "title": "SendVedtakFraUtvalg",
     "definitions": {
-        "Behandlingsplan": {
+        "Votering": {
             "type": "object",
             "properties": {
-                "tilUtvalgId": {
+                "moetedeltaker": {
                     "type": "string"
                 },
-                "tilUtvalgNavn": {
+                "representerer": {
                     "type": "string"
                 },
-                "tilMoeteId": {
-                    "type": "string"
-                },
-                "tilMoetedato": {
-                    "type": "string",
-                    "format": "date-time"
-                },
-                "rekkefoelge": {
-                    "type": "integer"
+                "stemme": {
+                    "type": "object",
+                    "properties": {
+                        "Ja": {
+                            "description": "None",
+                            "type": "object"
+                        },
+                        "Nei": {
+                            "description": "None",
+                            "type": "object"
+                        },
+                        "Blankt": {
+                            "description": "None",
+                            "type": "object"
+                        }
+                    },
+                    "required": [
+                        "Ja",
+                        "Nei",
+                        "Blankt"
+                    ]
                 }
             },
             "required": [
-                "tilUtvalgId",
-                "tilUtvalgNavn"
+                "moetedeltaker",
+                "representerer",
+                "stemme"
             ]
         }
     },
     "type": "object",
     "properties": {
+        "utvalgId": {
+            "type": "string"
+        },
+        "utvalgNavn": {
+            "type": "string"
+        },
+        "moeteId": {
+            "type": "string"
+        },
+        "moetedato": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "erEndeligVedtak": {
+            "type": "boolean"
+        },
         "sak": {
             "type": "object",
             "properties": {
@@ -64,29 +93,40 @@
                         "sakssekvensnummer"
                     ]
                 },
+                "utvalgetsSaksnummer": {
+                    "type": "object",
+                    "properties": {
+                        "saksaar": {
+                            "type": "integer"
+                        },
+                        "sakssekvensnummer": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "saksaar",
+                        "sakssekvensnummer"
+                    ]
+                },
                 "tittel": {
                     "type": "string"
                 },
-                "saksbeskrivelse": {
+                "vedtaksdato": {
+                    "type": "string",
+                    "format": "date"
+                },
+                "status": {
                     "type": "object",
                     "properties": {
-                        "tekstInnhold": {
+                        "kodeverdi": {
                             "type": "string"
                         },
-                        "tekstFormat": {
-                            "type": "object",
-                            "properties": {
-                                "kodeverdi": {
-                                    "type": "string"
-                                },
-                                "kodebeskrivelse": {
-                                    "type": "string"
-                                }
-                            }
+                        "kodebeskrivelse": {
+                            "type": "string"
                         }
                     }
                 },
-                "forslagTilVedtak": {
+                "vedtak": {
                     "type": "object",
                     "properties": {
                         "tekstInnhold": {
@@ -129,6 +169,12 @@
                 "posisjon": {
                     "description": "Punkt",
                     "type": "object"
+                },
+                "votering": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Votering"
+                    }
                 },
                 "referanseForelderMappeEksternNoekkel": {
                     "type": "object",
@@ -187,20 +233,19 @@
             "required": [
                 "referanseEksternNoekkel",
                 "fagsystemetsSaksnummer",
+                "utvalgetsSaksnummer",
                 "tittel",
+                "vedtaksdato",
                 "saksansvarlig"
             ]
-        },
-        "forslagTilBehandlingsplan": {
-            "type": "array",
-            "items": {
-                "$ref": "#/definitions/Behandlingsplan"
-            },
-            "minItems": 1
         }
     },
     "required": [
-        "sak",
-        "forslagTilBehandlingsplan"
+        "utvalgId",
+        "utvalgNavn",
+        "moeteId",
+        "moetedato",
+        "erEndeligVedtak",
+        "sak"
     ]
 }

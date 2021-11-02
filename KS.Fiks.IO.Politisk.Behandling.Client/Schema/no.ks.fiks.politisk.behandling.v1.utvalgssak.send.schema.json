@@ -1,16 +1,36 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://no.ks.fiks.politisk.behandling/SendDelegertVedtak.v1.schema.json",
-    "title": "SendDelegertVedtak",
-    "definitions": {},
+    "$id": "https://no.ks.fiks.politisk.behandling.v1/utvalgssak.send.schema.json",
+    "title": "SendUtvalgssak",
+    "definitions": {
+        "Behandlingsplan": {
+            "type": "object",
+            "properties": {
+                "tilUtvalgId": {
+                    "type": "string"
+                },
+                "tilUtvalgNavn": {
+                    "type": "string"
+                },
+                "tilMoeteId": {
+                    "type": "string"
+                },
+                "tilMoetedato": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "rekkefoelge": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "tilUtvalgId",
+                "tilUtvalgNavn"
+            ]
+        }
+    },
     "type": "object",
     "properties": {
-        "tilUtvalgId": {
-            "type": "string"
-        },
-        "tilUtvalgNavn": {
-            "type": "string"
-        },
         "sak": {
             "type": "object",
             "properties": {
@@ -44,40 +64,29 @@
                         "sakssekvensnummer"
                     ]
                 },
-                "utvalgetsSaksnummer": {
-                    "type": "object",
-                    "properties": {
-                        "saksaar": {
-                            "type": "integer"
-                        },
-                        "sakssekvensnummer": {
-                            "type": "integer"
-                        }
-                    },
-                    "required": [
-                        "saksaar",
-                        "sakssekvensnummer"
-                    ]
-                },
                 "tittel": {
                     "type": "string"
                 },
-                "vedtaksdato": {
-                    "type": "string",
-                    "format": "date"
-                },
-                "status": {
+                "saksbeskrivelse": {
                     "type": "object",
                     "properties": {
-                        "kodeverdi": {
+                        "tekstInnhold": {
                             "type": "string"
                         },
-                        "kodebeskrivelse": {
-                            "type": "string"
+                        "tekstFormat": {
+                            "type": "object",
+                            "properties": {
+                                "kodeverdi": {
+                                    "type": "string"
+                                },
+                                "kodebeskrivelse": {
+                                    "type": "string"
+                                }
+                            }
                         }
                     }
                 },
-                "vedtak": {
+                "forslagTilVedtak": {
                     "type": "object",
                     "properties": {
                         "tekstInnhold": {
@@ -179,15 +188,19 @@
                 "referanseEksternNoekkel",
                 "fagsystemetsSaksnummer",
                 "tittel",
-                "vedtaksdato",
-                "status",
                 "saksansvarlig"
             ]
+        },
+        "forslagTilBehandlingsplan": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Behandlingsplan"
+            },
+            "minItems": 1
         }
     },
     "required": [
-        "tilUtvalgId",
-        "tilUtvalgNavn",
-        "sak"
+        "sak",
+        "forslagTilBehandlingsplan"
     ]
 }

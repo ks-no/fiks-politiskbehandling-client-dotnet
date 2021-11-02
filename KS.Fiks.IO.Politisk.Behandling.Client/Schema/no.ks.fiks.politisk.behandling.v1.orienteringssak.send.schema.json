@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://no.ks.fiks.politisk.behandling/SendOrienteringssak.v1.schema.json",
+    "$id": "https://no.ks.fiks.politisk.behandling.v1/orienteringssak.send.schema.json",
     "title": "SendOrienteringssak",
     "definitions": {
         "Behandlingsplan": {

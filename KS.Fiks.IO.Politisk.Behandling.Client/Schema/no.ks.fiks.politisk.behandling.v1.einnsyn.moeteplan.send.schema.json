@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://no.ks.fiks.politisk.behandling/SendMoeteplanEinnsyn.v1.schema.json",
+    "$id": "https://no.ks.fiks.politisk.behandling.v1.einnsyn/moeteplan.send.schema.json",
     "title": "SendMoeteplanEinnsyn",
     "definitions": {
         "Utvalg": {

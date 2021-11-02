@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://no.ks.fiks.politisk.behandling/ResultatUtvalg.v1.schema.json",
+  "$id": "https://no.ks.fiks.politisk.behandling.v1/utvalg.hent.resultat.schema.json",
   "title": "ResultatUtvalg",
   "definitions": {
     "Utvalg": {
