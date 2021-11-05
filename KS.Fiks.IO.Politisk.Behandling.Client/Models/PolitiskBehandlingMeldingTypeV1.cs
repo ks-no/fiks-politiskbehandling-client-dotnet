@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace KS.Fiks.IO.Politiskbehandling.Client.Models
 {
     public class PolitiskBehandlingMeldingTypeV1
@@ -29,5 +31,44 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Models
         public const string SendUtvalgssakerTilEInnsynKvittering = "no.ks.fiks.politisk.behandling.v1.eInnsyn.utvalgssaker.send.kvittering";
         public const string SendVedtakTilEInnsyn = "no.ks.fiks.politisk.behandling.v1.eInnsyn.vedtak.send";
         public const string SendVedtakTilEInnsynKvittering = "no.ks.fiks.politisk.behandling.v1.eInnsyn.vedtak.send.kvittering";
+
+        private static Dictionary<string, string> Skjemanavn;
+
+        public static string GetSkjemanavn(string meldingstypeNavn)
+        {
+            if (Skjemanavn == null)
+            {
+                initSkjemanavn();
+            }
+            return Skjemanavn[meldingstypeNavn];
+        }
+
+        private static void initSkjemanavn()
+        {
+            Skjemanavn = new Dictionary<string, string>();
+            AddSkjemanavnTilDictionary(HentMoeteplan);
+            AddSkjemanavnTilDictionary(ResultatMoeteplan);
+            AddSkjemanavnTilDictionary(ResultatUtvalg);
+            AddSkjemanavnTilDictionary(SendVedtakFraUtvalg);
+            AddSkjemanavnTilDictionary(SendVedtakFraUtvalgKvittering);
+            AddSkjemanavnTilDictionary(SendUtvalgssak);
+            AddSkjemanavnTilDictionary(SendUtvalgssakKvittering);
+            AddSkjemanavnTilDictionary(SendOrienteringssak);
+            AddSkjemanavnTilDictionary(SendOrienteringssakKvittering);
+            AddSkjemanavnTilDictionary(SendDelegertVedtak);
+            AddSkjemanavnTilDictionary(SendDelegertVedtakKvittering);
+            AddSkjemanavnTilDictionary(SendMoeteplanTilEInnsyn);
+            AddSkjemanavnTilDictionary(SendMoeteplanTilEInnsynKvittering);
+            AddSkjemanavnTilDictionary(SendUtvalgssakerTilEInnsyn);
+            AddSkjemanavnTilDictionary(SendUtvalgssakerTilEInnsynKvittering);
+            AddSkjemanavnTilDictionary(SendVedtakTilEInnsyn);
+            AddSkjemanavnTilDictionary(SendVedtakTilEInnsynKvittering);
+        }
+
+        private static void AddSkjemanavnTilDictionary(string meldingstype)
+        {
+            Skjemanavn.Add(meldingstype, $"{meldingstype}.schema.json");
+        }
+
     }
 }

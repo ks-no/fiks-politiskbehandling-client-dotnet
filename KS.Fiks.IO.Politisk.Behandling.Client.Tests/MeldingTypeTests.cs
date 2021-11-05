@@ -163,6 +163,18 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
             }
             Assert.Fail("Skal ikke gå gjennom som valid!");
         }
+        
+        [Test]
+        public void GetSchemanavn_Er_Korrekt()
+        {
+
+            Assert.AreEqual(PolitiskBehandlingMeldingTypeV1.GetSkjemanavn(PolitiskBehandlingMeldingTypeV1.HentMoeteplan),
+                $"{PolitiskBehandlingMeldingTypeV1.HentMoeteplan}.schema.json");
+            
+            Assert.AreEqual(PolitiskBehandlingMeldingTypeV1.GetSkjemanavn(PolitiskBehandlingMeldingTypeV1.SendUtvalgssak),
+                $"{PolitiskBehandlingMeldingTypeV1.SendUtvalgssak}.schema.json");
+
+        }
 
         private static JSchema ValidationSchema(string meldingsType, string jsonPath, out JObject json)
         {
