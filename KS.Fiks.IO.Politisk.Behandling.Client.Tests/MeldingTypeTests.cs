@@ -25,9 +25,9 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
         [TestCase(PolitiskBehandlingMeldingTypeV1.SendUtvalgssak)]
         [TestCase(PolitiskBehandlingMeldingTypeV1.SendDelegertVedtak)]
         [TestCase(PolitiskBehandlingMeldingTypeV1.SendVedtakFraUtvalg)]
-        public void Politisk_behandling_schema_har_tilsvarende_meldingstype_navn(string meldingstype)
+        public void Politisk_behandling_schema_har_filnavn_tilsvarende_meldingstype_navn(string meldingstype)
         {
-            Assert.IsTrue(SchemaExists(meldingstype));
+            Assert.IsTrue(SchemafileExistInSchemaFolder(meldingstype));
         }
         
         [Test]
@@ -35,9 +35,9 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
         [TestCase(PolitiskBehandlingMeldingTypeV1.SendMoeteplanTilEInnsyn)]
         [TestCase(PolitiskBehandlingMeldingTypeV1.SendUtvalgssakerTilEInnsyn)]
         [TestCase(PolitiskBehandlingMeldingTypeV1.SendVedtakTilEInnsyn)]
-        public void Politisk_behandling_eInnsyn_schema_har_tilsvarende_meldingstype_navn(string meldingstype)
+        public void Politisk_behandling_eInnsyn_schema_har_filnavn_tilsvarende_meldingstype_navn(string meldingstype)
         {
-            Assert.IsTrue(SchemaExists(meldingstype));
+            Assert.IsTrue(SchemafileExistInSchemaFolder(meldingstype));
         }
         
         [Test]
@@ -204,7 +204,7 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
             }
         }
 
-        private static bool SchemaExists(string meldingstype)
+        private static bool SchemafileExistInSchemaFolder(string meldingstype)
         {
             return File.Exists(Path.Combine("Schema", $"{meldingstype}.schema.json"));
         }
