@@ -19,7 +19,7 @@
 		<PackageTags>FIKS</PackageTags>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<VersionPrefix>0.0.16</VersionPrefix>
+		<VersionPrefix>0.0.17</VersionPrefix>
 		<LangVersion>9</LangVersion>
 		<RootNamespace>KS.Fiks.IO.Politiskbehandling.Client</RootNamespace>
 	</PropertyGroup>
