@@ -49,71 +49,71 @@
 	
 	<ItemGroup>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.delegertvedtak.send.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.delegertvedtak.send.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.delegertvedtak.send.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.einnsyn.moeteplan.send.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.einnsyn.moeteplan.send.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.einnsyn.moeteplan.send.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.einnsyn.utvalgssaker.send.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.einnsyn.utvalgssaker.send.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.einnsyn.utvalgssaker.send.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.einnsyn.vedtak.send.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.einnsyn.vedtak.send.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.einnsyn.vedtak.send.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.moeteplan.hent.resultat.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.moeteplan.hent.resultat.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.moeteplan.hent.resultat.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.moeteplan.hent.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.moeteplan.hent.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.moeteplan.hent.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.orienteringssak.send.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.orienteringssak.send.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.orienteringssak.send.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.utvalg.hent.resultat.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.utvalg.hent.resultat.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.utvalg.hent.resultat.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.utvalg.hent.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.utvalg.hent.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.utvalg.hent.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.utvalgssak.send.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.utvalgssak.send.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.utvalgssak.send.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.vedtakfrautvalg.send.schema.json" />
-	  <Content Include="Schema\no.ks.fiks.politisk.behandling.v1.vedtakfrautvalg.send.schema.json">
+	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.vedtakfrautvalg.send.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		  <Pack>true</Pack>
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
-	  </Content>
+	  </EmbeddedResource>
 		<None Remove="Samples\utvalgssak\sampleSendUtvalgsak.json" />
 		<Content Include="Samples\utvalgssak\sampleSendUtvalgssak.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
