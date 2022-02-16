@@ -43,7 +43,7 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
         [Test]
         public void Moeteplan_Hent_Validering_Ok()
         {
-            var jsonPath = $"Samples/moeteplan/sampleHentMoeteplan.json";
+            var jsonPath = $"Samples/moeteplan/payload.json";
             var meldingsType = PolitiskBehandlingMeldingTypeV1.HentMoeteplan;
             
             var validationSchema = ValidationSchema(meldingsType, jsonPath, out var json);
@@ -63,7 +63,7 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
         [Test]
         public void DelegertVedtak_Send_Validering_Ok()
         {
-            var jsonPath = $"Samples/delegertvedtak/sampleSendDelegertVedtak.json";
+            var jsonPath = $"Samples/delegertvedtak/payload.json";
             var meldingsType = PolitiskBehandlingMeldingTypeV1.SendDelegertVedtak;
             
             var validationSchema = ValidationSchema(meldingsType, jsonPath, out var json);
@@ -83,7 +83,7 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
         [Test]
         public void DelegertVedtak_Send_Validering_Fail_Invalid_Properties()
         {
-            var jsonPath = $"Samples/delegertvedtak/sampleSendDelegertVedtak_InvalidExtraProperties.json";
+            var jsonPath = $"Samples/delegertvedtak_invalidextraproperties/payload.json";
             var meldingsType = PolitiskBehandlingMeldingTypeV1.SendDelegertVedtak;
             
             var validationSchema = ValidationSchema(meldingsType, jsonPath, out var json);
@@ -105,7 +105,7 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
         [Test]
         public void Orienteringssak_Send_Validering_Ok()
         {
-            var jsonPath = $"Samples/orienteringssak/sampleSendOrienteringssak.json";
+            var jsonPath = $"Samples/orienteringssak/payload.json";
             var meldingsType = PolitiskBehandlingMeldingTypeV1.SendOrienteringssak;
             
             var validationSchema = ValidationSchema(meldingsType, jsonPath, out var json);
@@ -125,7 +125,7 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
         [Test]
         public void Utvalgssak_Send_Validering_Ok()
         {
-            var jsonPath = $"Samples/utvalgssak/sampleSendUtvalgssak.json";
+            var jsonPath = $"Samples/utvalgssak/payload.json";
             var meldingsType = PolitiskBehandlingMeldingTypeV1.SendUtvalgssak;
             
             var validationSchema = ValidationSchema(meldingsType, jsonPath, out var json);
@@ -145,7 +145,7 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
         [Test]
         public void Utvalgssak_Send_Validering_Fail_Missing_Required_Properties()
         {
-            var jsonPath = $"Samples/utvalgssak/sampleSendUtvalgssak_InvalidMissingRequiredProperty.json";
+            var jsonPath = $"Samples/utvalgssak_invalidmissingrequiredproperty/payload.json";
             var meldingsType = PolitiskBehandlingMeldingTypeV1.SendUtvalgssak;
             
             var validationSchema = ValidationSchema(meldingsType, jsonPath, out var json);

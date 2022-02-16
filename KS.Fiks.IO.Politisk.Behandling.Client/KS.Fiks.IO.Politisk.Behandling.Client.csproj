@@ -115,40 +115,40 @@
 		  <PackageCopyToOutput>true</PackageCopyToOutput>
 	  </EmbeddedResource>
 		<None Remove="Samples\utvalgssak\sampleSendUtvalgsak.json" />
-		<Content Include="Samples\utvalgssak\sampleSendUtvalgssak.json">
+		<Content Include="Samples\delegertvedtak_invalidextraproperties\payload.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		  <Pack>true</Pack>
+		  <PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<Content Include="Samples\delegertvedtak\payload.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<Content Include="Samples\utvalgssak\payload.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<Content Include="Samples\orienteringssak\payload.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<Content Include="Samples\moeteplan\payload.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackageCopyToOutput>true</PackageCopyToOutput>
+		</Content>
+		<Content Include="Samples\utvalgssak_invalidmissingrequiredproperty\payload.json">
 			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
 			<Pack>true</Pack>
 			<PackageCopyToOutput>true</PackageCopyToOutput>
 		</Content>
 		<None Remove="Samples\orienteringssak\sampleSendOrienteringssak.json" />
-		<Content Include="Samples\orienteringssak\sampleSendOrienteringssak.json">
-		  	<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<Pack>true</Pack>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-		</Content>
 		<None Remove="Samples\delegertvedtak\sampleSendDelegertVedtak.json" />
-		<Content Include="Samples\delegertvedtak\sampleSendDelegertVedtak.json">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<Pack>true</Pack>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-		</Content>
 		<None Remove="Samples\moeteplan\sampleHentMoeteplan.json" />
-		<Content Include="Samples\moeteplan\sampleHentMoeteplan.json">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<Pack>true</Pack>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-		</Content>
 		<None Remove="Samples\delegertvedtak\sampleSendDelegertVedtak_InvalidExtraProperties.json" />
-		<Content Include="Samples\delegertvedtak\sampleSendDelegertVedtak_InvalidExtraProperties.json">
-		  	<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-		  	<Pack>true</Pack>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-		</Content>
 		<None Remove="Samples\utvalgssak\sampleSendUtvalgssak_InvalidMissingRequiredProperty.json" />
-		<Content Include="Samples\utvalgssak\sampleSendUtvalgssak_InvalidMissingRequiredProperty.json">
-			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-			<Pack>true</Pack>
-			<PackageCopyToOutput>true</PackageCopyToOutput>
-		</Content>
 	</ItemGroup>
 </Project>
