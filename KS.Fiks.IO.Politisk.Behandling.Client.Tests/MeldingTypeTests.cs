@@ -179,9 +179,18 @@ namespace KS.Fiks.IO.Politisk.Behandling.Client.Tests
         private static JSchema ValidationSchema(string meldingsType, string jsonPath, out JObject json)
         {
             var resolver = new JSchemaPreloadedResolver();
+            resolver.Add(new Uri("https://no.ks.fiks.protokoller/base/v1/referanseeksternnoekkel"), File.ReadAllText($"Schema/no.ks.fiks.protokoller.v1.base.referanseeksternnoekkel.schema.json"));
 
             var validationSchemaReader = File.OpenText($"Schema/{meldingsType}.schema.json");
-            var validationSchema = JSchema.Load(new JsonTextReader(validationSchemaReader), resolver);
+            var validationSchema = JSchema.Load(
+                new JsonTextReader(validationSchemaReader),
+                new JSchemaReaderSettings
+                {
+                    Resolver = resolver,
+                }
+            ); 
+                
+         
             
             AddAdditionalPropertiesFalseToSchemaProperties(validationSchema.Properties);
 

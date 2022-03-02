@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://no.ks.fiks.protokoller/base/v1/dokumentfil",
+    "title": "Dokumenftil",
+    "type": "object",
+    "properties": {
+        "referanse": {
+            "type": "string"
+        },
+        "vedlegg": {
+            "type": "string"
+        }
+    },
+    "oneOf": [
+        {
+            "required": [
+                "referanse"
+            ]
+        },
+        {
+            "required": [
+                "vedlegg"
+            ]
+        }
+    ]
+}
