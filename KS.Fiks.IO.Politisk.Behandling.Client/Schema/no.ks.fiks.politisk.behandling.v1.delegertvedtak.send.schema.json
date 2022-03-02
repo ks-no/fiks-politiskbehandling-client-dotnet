@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://no.ks.fiks.protokoller/politiskbehandling/v1/delegertvedtak/send",
+    "$id": "https://no.ks.fiks.politisk.behandling.v1/delegertVedtak.send.schema.json",
     "title": "SendDelegertVedtak",
     "definitions": {},
     "type": "object",
