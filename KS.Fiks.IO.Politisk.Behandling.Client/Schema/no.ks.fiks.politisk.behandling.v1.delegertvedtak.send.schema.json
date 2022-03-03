@@ -14,7 +14,9 @@
         "sak": {
             "type": "object",
             "properties": {
-                "referanseEksternNoekkel": { "$ref": "https://no.ks.fiks.protokoller/base/v1/referanseeksternnoekkel"},
+                "referanseEksternNoekkel": {
+                    "$ref": "https://no.ks.fiks.protokoller/base/v1/referanseeksternnoekkel"
+                },
                 "fagsystemetsSaksnummer": {
                     "type": "object",
                     "properties": {
