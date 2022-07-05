@@ -31,8 +31,21 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Models
         public const string SendUtvalgssakerTilEInnsynKvittering = "no.ks.fiks.politisk.behandling.v1.eInnsyn.utvalgssaker.send.kvittering";
         public const string SendVedtakTilEInnsyn = "no.ks.fiks.politisk.behandling.v1.eInnsyn.vedtak.send";
         public const string SendVedtakTilEInnsynKvittering = "no.ks.fiks.politisk.behandling.v1.eInnsyn.vedtak.send.kvittering";
+        
+        // Feilmeldinger
+        public const string Ugyldigforespørsel = "no.ks.fiks.politisk.behandling.v1.feilmelding.ugyldigforespoersel";
+        public const string Serverfeil = "no.ks.fiks.politisk.behandling.v1.feilmelding.serverfeil";
+        public const string Ikkefunnet = "no.ks.fiks.politisk.behandling.v1.feilmelding.ikkefunnet";
+
 
         private static Dictionary<string, string> Skjemanavn;
+        
+        public static readonly List<string> FeilmeldingTyper = new List<string>()
+        {
+            Ugyldigforespørsel,
+            Serverfeil,
+            Ikkefunnet
+        };
 
         public static string GetSkjemanavn(string meldingstypeNavn)
         {
@@ -70,5 +83,9 @@ namespace KS.Fiks.IO.Politiskbehandling.Client.Models
             Skjemanavn.Add(meldingstype, $"{meldingstype}.schema.json");
         }
 
+        public static bool IsFeilmelding(string meldingsType)
+        {
+            return FeilmeldingTyper.Contains(meldingsType);
+        }
     }
 }
