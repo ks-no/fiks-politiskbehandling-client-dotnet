@@ -48,6 +48,16 @@
 	</ItemGroup>
 	
 	<ItemGroup>
+	  <EmbeddedResource Include="Schema\no.ks.fiks.protokoller.v1.base.dokumentfil.schema.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    <Pack>true</Pack>
+	    <PackageCopyToOutput>true</PackageCopyToOutput>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Schema\no.ks.fiks.protokoller.v1.base.referanseeksternnoekkel.schema.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    <Pack>true</Pack>
+	    <PackageCopyToOutput>true</PackageCopyToOutput>
+	  </EmbeddedResource>
 	  <None Remove="Schema\no.ks.fiks.politisk.behandling.v1.delegertvedtak.send.schema.json" />
 	  <EmbeddedResource Include="Schema\no.ks.fiks.politisk.behandling.v1.delegertvedtak.send.schema.json">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>

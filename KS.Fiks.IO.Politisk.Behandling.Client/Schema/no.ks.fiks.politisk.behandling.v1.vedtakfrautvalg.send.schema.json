@@ -64,19 +64,7 @@
             "type": "object",
             "properties": {
                 "referanseEksternNoekkel": {
-                    "type": "object",
-                    "properties": {
-                        "fagsystem": {
-                            "type": "string"
-                        },
-                        "noekkel": {
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "fagsystem",
-                        "noekkel"
-                    ]
+                    "$ref": "https://no.ks.fiks.protokoller/base/v1/referanseeksternnoekkel"
                 },
                 "fagsystemetsSaksnummer": {
                     "type": "object",
